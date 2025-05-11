@@ -1,0 +1,75 @@
+{
+  "services": {
+    "arm": {
+      "name": "Armar",
+      "description": "Armar unha entidade Alarmo con configuracións personalizadas.",
+      "fields": {
+        "entity_id": {
+          "name": "ID da entidade",
+          "description": "Entidade de alarma que debe ser armada."
+        },
+        "code": {
+          "name": "Código",
+          "description": "Código a empregar para o armado."
+        },
+        "mode": {
+          "name": "Modo",
+          "description": "Modo no que se desexa armar a alarma."
+        },
+        "skip_delay": {
+          "name": "Saltar retardo",
+          "description": "Saltar o tempo de retardo de saída."
+        },
+        "force": {
+          "name": "Forzar",
+          "description": "Ignorar automaticamente todos os sensores que impidan o armado."
+        }
+      }
+    },
+    "disarm": {
+      "name": "Desarmar",
+      "description": "Desarmar unha entidade Alarmo.",
+      "fields": {
+        "entity_id": {
+          "name": "ID da entidade",
+          "description": "Entidade de alarma que debe ser desarmada."
+        },
+        "code": {
+          "name": "Código",
+          "description": "Código a empregar para o desarmado."
+        }
+      }
+    },
+    "enable_user": {
+      "name": "Habilitar usuario",
+      "description": "Permitir a un usuario armar ou desarmar Alarmo.",
+      "fields": {
+        "name": {
+          "name": "Nome",
+          "description": "Nome do usuario que se quere habilitar."
+        }
+      }
+    },
+    "disable_user": {
+      "name": "Deshabilitar usuario",
+      "description": "Bloquear a un usuario para que non poida armar ou desarmar Alarmo.",
+      "fields": {
+        "name": {
+          "name": "Nome",
+          "description": "Nome do usuario que se quere deshabilitar."
+        }
+      }
+    }
+  },
+  "selector": {
+    "arm_mode": {
+      "options": {
+        "away": "Armado fóra",
+        "night": "Armado nocturno",
+        "home": "Armado na casa",
+        "vacation": "Armado vacacións",
+        "custom": "Armado personalizado (bypass)"
+      }
+    }
+  }
+}
